@@ -1,0 +1,66 @@
+/* CSS GOOGLE FONT FAMILIES
+
+font-family: 'Baloo Thambi 2', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Spartan', sans-serif;
+font-family: 'Quattrocento Sans', sans-serif;
+font-family: 'Special Elite', cursive;
+*/
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: slategray;
+}
+
+h2 {
+  font-family: 'Spartan', sans-serif;
+  font-size: 20px;
+  color: lightgrey;
+  font-weight: 30;
+}
+
+p {
+  font-family: 'Spartan', sans-serif;
+  color: lightgray;
+}
+
+html { 
+  background: url(img/blue.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* TEXT BOXES */
+
+.text_box {
+  position: relative;
+}
+
+.text_box .content_section {
+  /*background-color: #ffffff;*/
+  position: relative;
+  padding: 20px 0;
+}
+
+.text_box .content_section .content_box {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-right: 0;
+  z-index: 999;
+  top: 0;
+  width: 400px;
+  bottom: 0;
+  padding: 15px;
+  min-height: 500px;
+  /*background-color: #ffffff;*/
+}
+
+.text_box .content_section .content_box .content_box_inner {
+  padding: /*25px 20px 25px 15px*/50px;
+  }
