@@ -74,6 +74,12 @@ html {
 
 .socials 
 
+.creator {
+  position: relative;
+  border: 50px;
+  padding: 30px;
+}
+
 .menutxt {
   color: white;
   font-family: 'Spartan', sans-serif;
@@ -87,7 +93,12 @@ a {
 
 a:hover {
   transition: ease-in .2s;
-  color: #a5cfaf;"
+  color: #a5cfaf;
 }
 
+img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
   
