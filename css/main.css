@@ -1,4 +1,4 @@
-/* CSS GOOGLE FONT FAMILIES
+/* GOOGLE FONT FAMILIES
 
 font-family: 'Baloo Thambi 2', cursive;
 font-family: 'Raleway', sans-serif;
@@ -27,15 +27,21 @@ p {
   color: lightgray;
 }
 
+.menutxt {
+  color: white;
+  font-family: 'Spartan', sans-serif;
+}
+
+/* UNDIRTIFY INLINE CSS WITH THIS FORMAT 
 html { 
   background: url(img/blue.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
-/* TEXT BOXES */
+/* BASIC CONTENT BOXES */
 
 .menu {
   position: relative;
@@ -47,7 +53,6 @@ html {
 }
 
 .text_box .content_section {
-  /*background-color: #ffffff;*/
   position: relative;
   padding: 20px 0;
 }
@@ -63,11 +68,10 @@ html {
   bottom: 0;
   padding: 15px;
   min-height: 300px;
-  /*background-color: #ffffff;*/
 }
 
 .text_box .content_section .content_box .content_box_inner {
-  padding: /*25px 20px 25px 15px*/50px;
+  padding: /*bootstrap- 25px 20px 25px 15px*/50px;
   }
 
 .whitebg {
@@ -82,13 +86,11 @@ html {
   min-height: 150px;
 }
 
-  /* SOCIALS */
-
-.socials 
+/* SOCIAL STRUCTURING */ 
 
 .avi {
   position: relative;
-  min-height: 500px;
+  min-height: 100px;
 }
 
 .creator {
@@ -112,10 +114,7 @@ html {
   margin: 0 auto;
 }
 
-.menutxt {
-  color: white;
-  font-family: 'Spartan', sans-serif;
-}
+/* LINKS */
 
 a {
   color: white;
@@ -128,9 +127,55 @@ a:hover {
   color: #a5cfaf;
 }
 
-img {
+/* IMAGES */
+
+.avipic {
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 85px;
+  height: 85px;
 }
-  
+
+#photos {
+  line-height: 0px;
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           5px;  
+}
+
+#photos img {
+  width: 100% !important;
+  height: auto !important;
+}
+ 
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
